@@ -11,6 +11,7 @@ function App() {
              <h1>Zak Kay</h1>
              <h1>I'm hungry</h1>
              <h1>John Lane</h1>
+  </div>
    
   );
 }
