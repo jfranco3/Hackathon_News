@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ArticleCard from "./ArticleCard";
+import ListArticles from "./ListArticles";
+import SearchForm from "./SearchForm";
 
 // a. Fetches data and holds it in state
 // b. Then passes as props to LIST ARTICLES
@@ -23,9 +25,9 @@ export default function AppComponent() {
 
   return (
     <div>
-      <ArticleCard stories={stories} />
+      <ArticleCard stories={stories} setStories={setStories} />
+      <ListArticles stories={stories} setStories={setStories} />
+      <SearchForm stories={stories} setStories={setStories} />
     </div>
   );
 }
-
-//
