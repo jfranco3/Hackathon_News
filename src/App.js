@@ -1,15 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import AppComponent from "./Components/AppComponent";
 
 function App() {
   return (
-  <div className="App">
-            <h1>HELLO ITS JENN!</h1>
-             <h1>Zak Kay</h1>
-             <h1>I'm hungry</h1>
-             <h1>John Lane</h1>
-             <h1>Philip</h1>
-  </div>
-   
+    <div className="App">
+      <AppComponent />
+    </div>
   );
 }
 
