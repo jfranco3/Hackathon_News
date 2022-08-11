@@ -1,11 +1,7 @@
-import React, {useState, useEffect, useContext, useCallback} from 'react';
-
+import React, { useState, useEffect } from "react";
 
 function App() {
-
-
   return (
-   
   <div className="App">
             <h1>HELLO ITS JENN!</h1>
              <h1>Zak Kay</h1>
@@ -18,7 +14,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
