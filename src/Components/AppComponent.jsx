@@ -7,6 +7,7 @@ import SearchForm from "./SearchForm";
 // b. Then passes as props to LIST ARTICLES
 // c. Passes methods as props to SEARCH FORM
 // This is jenn and I trying to figure this out
+// Zak is here now
 
 export default function AppComponent() {
   const [stories, setStories] = useState([]);
