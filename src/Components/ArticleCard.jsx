@@ -1,17 +1,12 @@
 import React from "react";
 
 export default function ArticleCard(props) {
-  const {
-    stories,
-    setStories,
-    title,
-    author,
-    url,
-    createdAt,
-    numComments,
-    objectId,
-    points,
-  } = props;
-  console.log("PROPS", props.stories);
-  return <div>{title}</div>;
+  const { title, author, url, createdAt, numComments, objectId, points } =
+    props;
+    
+  return (
+    <div>
+      {title} <p>{points}</p>
+    </div>
+  );
 }
