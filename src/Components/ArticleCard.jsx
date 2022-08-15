@@ -26,20 +26,27 @@ export default function ArticleCard(props) {
   return (
     <Paper elevation={3}>
       <Card sx={{ minWidth: 275 }}>
-        <CardContent>
+        <CardContent style={{ backgroundColor: "mintcream" }}>
           <Typography
             variant="h5"
             component="div"
             onClick={handleClick}
             style={{ cursor: "pointer" }}
+            sx={{ fontFamily: "tahoma" }}
           >
             {title}
           </Typography>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+          <Typography sx={{ mb: 0.5 }} color="dimgray">
             {createdAt}
           </Typography>
           <Typography variant="body2">Author: {author}</Typography>
-          <Typography variant="body2">URL: {url}</Typography>
+          <Typography
+            sx={{ textDecoration: "underline" }}
+            variant="body3"
+            color="blue"
+          >
+            URL: {url}
+          </Typography>
         </CardContent>
       </Card>
     </Paper>
