@@ -9,10 +9,11 @@ import SearchForm from "./SearchForm";
 
 export default function AppComponent() {
   const [stories, setStories] = useState([]);
+  const [sort, setSort] = useState("");
 
   useEffect(() => {
     const fetchstories = () => {
-      fetch("http://hn.algolia.com/api/v1/search?tags=front_page")
+      fetch("http://hn.algolia.com/api/v1/search?tags=story&hitsPerPage=100")
         .then((response) => {
           return response.json();
         })
@@ -20,14 +21,19 @@ export default function AppComponent() {
           setStories(response.hits);
         });
     };
+
     fetchstories();
-  }, []);
+  }, [sort]);
 
   return (
     <div>
-      <ArticleCard stories={stories} setStories={setStories} />
-      <ListArticles stories={stories} setStories={setStories} />
-      <SearchForm stories={stories} setStories={setStories} />
+      <SearchForm
+        stories={stories}
+        setStories={setStories}
+        sort={sort}
+        setSort={setSort}
+      />
+      <ListArticles stories={stories} setStories={setStories} sort={sort} />
     </div>
   );
 }
