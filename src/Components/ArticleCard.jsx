@@ -41,6 +41,7 @@ export default function ArticleCard(props) {
             {createdAt}
           </Typography>
           <Typography variant="body2">Author: {author}</Typography>
+          <Typography variant="body2">Points: {points}</Typography>
           <Typography
             sx={{ textDecoration: "underline" }}
             variant="body3"
