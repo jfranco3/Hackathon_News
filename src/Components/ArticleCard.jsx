@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 
 export default function ArticleCard(props) {
+
   const {
     stories,
     setStories,
